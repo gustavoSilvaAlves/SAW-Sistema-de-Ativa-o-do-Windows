@@ -1,4 +1,4 @@
-🖥️ Windows Activation Script
+# 🖥️ Windows Activation Script
 
 ---
 
@@ -6,7 +6,7 @@ Este projeto é um serviço de ativação automatizada do Windows, desenvolvido 
 
 ---
 
-🚀 Funcionalidades
+# 🚀 Funcionalidades
 
 🔑 Requisição automática de chave de ativação via banco de dados
 
@@ -20,7 +20,7 @@ Este projeto é um serviço de ativação automatizada do Windows, desenvolvido 
 
 ---
 
-🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 PowerShell – Script nativo do Windows, ideal para automação
 
 MySQL – Gerenciamento e controle das chaves de ativação
@@ -29,7 +29,7 @@ Windows – Ambiente-alvo para aplicação e validação das licenças
 
 ---
 
-📦 Estrutura do Banco de Dados
+# 📦 Estrutura do Banco de Dados
 Coluna	Descrição
 idkey	ID único para cada chave no banco
 keycontent	Chave de ativação do Windows
@@ -41,7 +41,7 @@ memória	Informação auxiliar sobre a memória da máquina
 
 ---
 
-🔄 Funcionamento do Script
+# 🔄 Funcionamento do Script
 Desbloqueio do PowerShell: Altera a política de execução (ExecutionPolicy) para Bypass.
 
 Requisição da Chave: Consulta o banco de dados para obter uma chave com keystate = 0.
@@ -56,7 +56,7 @@ Auto Limpeza: Retorna a política original do sistema e se auto remove.
 
 ---
 
-🔐 Status das Chaves
+# 🔐 Status das Chaves
 Status	Significado
 0	Chave disponível para uso
 1	Chave em uso (processo de ativação em andamento)
@@ -65,7 +65,7 @@ Status	Significado
 
 ---
 
-📊 Exemplo de Ciclo de Ativação
+# 📊 Exemplo de Ciclo de Ativação
 
 🧱 Criação da Imagem com Macrium
 
@@ -105,7 +105,7 @@ O script repete o processo até uma chave válida ser aplicada com sucesso e a m
 
 ---
 
-🧩 Considerações Finais
+# 🧩 Considerações Finais
 Este projeto foi idealizado com foco em:
 
 Compatibilidade com o Windows
