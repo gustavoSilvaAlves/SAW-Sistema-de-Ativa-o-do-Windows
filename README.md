@@ -1,7 +1,13 @@
-🖥️ Windows Activation Script - PowerShell + MySQL
+🖥️ Windows Activation Script
+
+---
+
 Este projeto é um serviço de ativação automatizada do Windows, desenvolvido em PowerShell e integrado a um banco de dados MySQL. Ele foi criado para facilitar o processo de ativação de forma segura, eficiente e sem intervenção manual.
 
+---
+
 🚀 Funcionalidades
+
 🔑 Requisição automática de chave de ativação via banco de dados
 
 ⚙️ Instalação, validação e ativação da chave diretamente nos servidores da Microsoft
@@ -12,12 +18,16 @@ Este projeto é um serviço de ativação automatizada do Windows, desenvolvido 
 
 🔒 Autoapagamento do script após ativação para segurança
 
+---
+
 🛠️ Tecnologias Utilizadas
 PowerShell – Script nativo do Windows, ideal para automação
 
 MySQL – Gerenciamento e controle das chaves de ativação
 
 Windows – Ambiente-alvo para aplicação e validação das licenças
+
+---
 
 📦 Estrutura do Banco de Dados
 Coluna	Descrição
@@ -28,6 +38,8 @@ keystate	Status da chave (0 = disponível, 1 = em uso, 2 = bloqueada, 3 = ativad
 bancada	Usuário (bancada) que utilizou a chave
 disco	Informação auxiliar sobre o disco da máquina
 memória	Informação auxiliar sobre a memória da máquina
+
+---
 
 🔄 Funcionamento do Script
 Desbloqueio do PowerShell: Altera a política de execução (ExecutionPolicy) para Bypass.
@@ -42,12 +54,16 @@ Atualização no Banco: O script registra o status da ativação (sucesso ou fal
 
 Auto Limpeza: Retorna a política original do sistema e se auto remove.
 
+---
+
 🔐 Status das Chaves
 Status	Significado
 0	Chave disponível para uso
 1	Chave em uso (processo de ativação em andamento)
 2	Chave bloqueada ou inválida
 3	Chave utilizada com sucesso
+
+---
 
 📊 Exemplo de Ciclo de Ativação
 
@@ -86,6 +102,8 @@ Nenhum serial é salvo.
 🔄 Loop de Retentativa
 
 O script repete o processo até uma chave válida ser aplicada com sucesso e a máquina é desligada de forma automática.
+
+---
 
 🧩 Considerações Finais
 Este projeto foi idealizado com foco em:
