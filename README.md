@@ -42,17 +42,17 @@ memória	Informação auxiliar sobre a memória da máquina
 ---
 
 # 🔄 Funcionamento do Script
-Desbloqueio do PowerShell: Altera a política de execução (ExecutionPolicy) para Bypass.
+1. Desbloqueio do PowerShell: Altera a política de execução (ExecutionPolicy) para Bypass.
 
-Requisição da Chave: Consulta o banco de dados para obter uma chave com keystate = 0.
+2. Requisição da Chave: Consulta o banco de dados para obter uma chave com keystate = 0.
 
-Instalação da Chave: Usa comandos nativos do Windows para instalar a chave.
+3. Instalação da Chave: Usa comandos nativos do Windows para instalar a chave.
 
-Ativação: Valida a chave com os servidores da Microsoft.
+4. Ativação: Valida a chave com os servidores da Microsoft.
 
-Atualização no Banco: O script registra o status da ativação (sucesso ou falha) no banco de dados.
+5. Atualização no Banco: O script registra o status da ativação (sucesso ou falha) no banco de dados.
 
-Auto Limpeza: Retorna a política original do sistema e se auto remove.
+6. Auto Limpeza: Retorna a política original do sistema e se auto remove.
 
 ---
 
